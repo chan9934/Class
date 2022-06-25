@@ -33,7 +33,7 @@ public:
 		CodingKnowledge = rand() % 4 + 1; //1~4의 랜덤 스텟
 	}
 
-	void Sleep(int hour)
+	void Sleep(int hour) // 자기
 	{
 
 		system("cls");
@@ -47,7 +47,7 @@ public:
 	}
 
 
-	void Eat()
+	void Eat() // 먹기
 	{
 		system("cls");
 		srand(time(NULL));
@@ -55,7 +55,7 @@ public:
 		Humanstate.Hungry += percentage;
 	}
 
-	void TakeClass()
+	void TakeClass() // 수업듣기
 	{
 		system("cls");
 		const int hour = 9;
@@ -97,7 +97,7 @@ public:
 			
 	}
 
-	void preparation(int hour)
+	void preparation(int hour) // 자습
 	{
 		system("cls");
 		Humanstate.Fatigue += 7 * hour;
@@ -112,7 +112,7 @@ public:
 	}
 
 
-	void Programmers()
+	void Programmers() // 프로그래머스 풀기
 	{
 		system("cls");
 	
@@ -162,7 +162,7 @@ public:
 
 	}
 
-	void ViewState()
+	void ViewState() //상태창 보기
 	{
 		system("cls");
 		cout << "Humanstate.Hungry = " << Humanstate.Hungry << endl;
